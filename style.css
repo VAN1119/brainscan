@@ -1,0 +1,196 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+/* TOPバナーを固定する方法 */
+#top {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left:50%;
+    transform: translate(-50%, -20%);
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p.down {
+    margin-top: 30px;
+}
+
+a {
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0;
+    text-align: center;
+    margin: 0px auto 15px;
+    text-decoration: none;
+    display: block;
+    color: #000;
+    background-color: white;
+    border: 2px solid #000;
+}
+
+a:hover {
+    color: #fff;
+    background-color: black;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    background-color: rgb(80, 136, 211);
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+h2::before {
+    content: "【";
+    color: blue;
+}
+
+h2::after {
+    content: "】";
+    color: blue;
+}
+.topic {
+    text-align: center;
+}
+.rule {
+    text-align: center;
+    display: block;
+}
+
+.ask {
+    text-align: center;
+    display: block;
+}
+
+p {
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    display: inline-block;
+}
+
+.text {
+    font-size: 20px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+small {
+    background-color: black;
+}
+
+span {
+    font-weight: bold;
+}
+
+span.b {
+    color: red;
+}
+
+span.tb {
+    color: red;
+    background-color: rgb(80, 136, 211);
+}
+
+.big {
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+}
+
+.ans{
+    text-align: center;
+}
+
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start; 
+}
+
+.show {
+    width: 130px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+}
+
+.hshow {
+    width: 100px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+.qpic {
+    margin: 0 10px 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li .sentence{
+    text-align: center;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@keyframes open-keyanime1{ /* アニメーションの動き */ 
+    0% {
+      opacity:0; /* 完全に透明 */ } 
+    100% {
+      opacity:1; /* 透明度無し、通常表示 */ } } 
+  .animation1{ 
+    animation-name: open-keyanime1 ; 
+    animation-duration: 8s; /* 5秒間で表示 */ 
+    animation-fill-mode: both;
+  }
+
+@media (max-width:767px) {
+.show {width: 35px;}
+.qpic {width: 150px;}
+main.first {background-size: 100px;}
+}
+
+main.first {
+    background-image: url(images/brain.png);
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main.second {
+    background-image: url(images/hpic7.jpg);
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

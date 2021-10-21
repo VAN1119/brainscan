@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <title>質問1</title>
+        <meta name="keywords" content="Webページの重要なワードを検索エンジンに対して示すもの「,」で区切って複数記載">
+        <meta name="description" content="ページの説明文・要約、検索結果でページタイトルと共に表示される部分">
+        <meta property="og:url" content=" ページのURL">
+        <meta property="og:type" content=" article">
+        <meta property="og:title" content=" ページのタイトル">
+        <meta property="og:description" content=" ページの説明文">
+        <meta property="og:site_name" content="サイト名">
+        <meta property="og:image" content=" サムネイル画像の URL">
+        <meta name="twitter:card" content="summary_large_image">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/favi.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+        <!--<META http-equiv="Refresh" content="30;URL=index.html">-->
+    </head>
+    <body>
+        <header id="top">
+            <h1><span class="tb">脳</span>内スキャン</h1>
+        </header>
+        <main>
+            <p class="down"></p>
+        <form id="ask" name="ask" onsubmit="check(); return false;">
+            <p class="down"> </p>
+            <ul>
+                <li>
+                    <div class="picture">
+                        <img class="qpic" src="images/pic2.jpg" alt="画像2" width=250px>
+                        <img class="qpic" src="images/pic4.jpg" alt="画像4" width=250px>
+                        <img class="qpic" src="images/pic6.jpg" alt="画像6" width=250px>
+                        <img class="qpic" src="images/pic5.jpg" alt="画像8" width=250px>
+                    </div>
+                    <div class="sentence">
+                        <p class="question">上の4枚の中に選んだ画像はありますか？</p>
+                        <label><input type="radio" name="q0" value="1" required=""/>はい</label>
+                        <label><input type="radio" name="q0" value="0"/>いいえ</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="picture">
+                        <img class="qpic" src="images/pic3.jpg" alt="画像3" width=250px>
+                        <img class="qpic" src="images/pic5.jpg" alt="画像8" width=250px>
+                        <img class="qpic" src="images/pic7.jpg" alt="画像7" width=250px> 
+                        <img class="qpic" src="images/pic4.jpg" alt="画像4" width=250px>
+                    </div>
+                    <div class="sentence">
+                        <p class="question">上の4枚の中に選んだ画像はありますか？</p>
+                        <label><input type="radio" name="q1" value="1" required=""/>はい</label>
+                        <label><input type="radio" name="q1" value="0"/>いいえ</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="picture">
+                        <img class="qpic" src="images/pic7.jpg" alt="画像7" width=250px>
+                        <img class="qpic" src="images/pic8.jpg" alt="画像8" width=250px>
+                        <img class="qpic" src="images/pic6.jpg" alt="画像6" width=250px> 
+                        <img class="qpic" src="images/pic5.jpg" alt="画像5" width=250px>
+                    </div>
+                    <div class="sentence">
+                        <p class="question">上の4枚の中に選んだ画像はありますか？</p>
+                        <label><input type="radio" name="q2" value="1" required=""/>はい</label>
+                        <label><input type="radio" name="q2" value="0"/>いいえ</label>
+                    </div>
+                </li>
+            </ul>
+            <div class="last">
+                <input type="submit" value="回答" class="judge" />
+                <p class="lastcheck">全ての問題に回答してください</p>
+            </div>
+        </form>    
+        <script src="script.js"></script>
+        </main>
+        <footer>
+            <small>&copy; 2021 Ban</small>
+        </footer>
+    </body>
+</html>
