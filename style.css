@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box; */
 }
 
 /* TOPバナーを固定する方法 */
@@ -86,6 +86,41 @@ p {
     font-size: 20px;
 }
 
+.last {
+    text-align: center;
+}
+
+input.judge {
+    font-size: 20px;
+    display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 40px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+input.judge:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+p.lastcheck {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+
+p.lastcheck:before {
+    content: "※";
+}
+
 footer {
     color: white;
     background-color: black;
@@ -151,7 +186,7 @@ ul{
 ul li .sentence{
     text-align: center;
     border-bottom: 2px solid gray;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 label {
@@ -160,11 +195,26 @@ label {
     font-weight: bold;
 }
 
-@keyframes open-keyanime1{ /* アニメーションの動き */ 
+input:checked + label p {
+    background: orange;
+}
+label p {
+    margin: 0;
+}
+
+/* ラジオボタン自体を見えなくする */
+input.rad {
+    display: none;
+}
+
+/* ゆっくり表示させる */
+@keyframes
+    open-keyanime1{ /* アニメーションの動き */ 
     0% {
-      opacity:0; /* 完全に透明 */ } 
+    opacity:0; /* 完全に透明 */ } 
     100% {
-      opacity:1; /* 透明度無し、通常表示 */ } } 
+    opacity:1; /* 透明度無し、通常表示 */ } } 
+
   .animation1{ 
     animation-name: open-keyanime1 ; 
     animation-duration: 8s; /* 5秒間で表示 */ 
