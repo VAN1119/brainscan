@@ -28,7 +28,6 @@
         <main>
             <p class="down"></p>
         <form id="ask" name="ask" onsubmit="check(); return false;">
-            <p class="down"> </p>
             <ul>
                 <li>
                     <div class="picture">
@@ -41,6 +40,7 @@
                         <p class="question">上の4枚の中に選んだ画像はありますか？</p>
                         <input type="radio" class="rad" id="aa" name="q0" value="1" style="transform: scale(1.8)" required=""/><label for="aa"><p>はい</p></label>
                         <input type="radio" class="rad" id="ab" name="q0" value="0" style="transform: scale(1.8)"/><label for="ab"><p>いいえ</p></label>
+                        <p　class="us">※選択したら下にスクロールしてください。</p>
                     </div>
                 </li>
                 <li>
@@ -54,6 +54,7 @@
                         <p class="question">上の4枚の中に選んだ画像はありますか？</p>
                         <input type="radio" class="rad" id="ba" name="q1" value="1" style="transform: scale(1.8)" required=""/><label for="ba"><p>はい</p></label>
                         <input type="radio" class="rad" id="bb" name="q1" value="0" style="transform: scale(1.8)"/><label for="bb"><p>いいえ</p></label>
+                        <p　class="us">※選択したら下にスクロールしてください。</p>
                     </div>
                 </li>
                 <li>
@@ -67,12 +68,13 @@
                         <p class="question">上の4枚の中に選んだ画像はありますか？</p>
                         <input type="radio" class="rad" id="ca" name="q2" value="1" style="transform: scale(1.8)" required=""/><label for="ca"><p>はい</p></label>
                         <input type="radio" class="rad" id="cb" name="q2" value="0" style="transform: scale(1.8)"/><label for="cb"><p>いいえ</p></label>
+                        <p　class="us">※選択したら下にスクロールしてください。</p>
                     </div>
                 </li>
             </ul>
             <div class="last">
                 <input type="submit" value="回答" class="judge" />
-                <p class="lastcheck">全ての問題に回答してください</p>
+                <p class="check">全ての問題に回答してください</p>
             </div>
         </form>    
         <script src="script.js"></script>

@@ -15,7 +15,7 @@
 }
 
 p.down {
-    margin-top: 30px;
+    margin-top: 90px;
 }
 
 a {
@@ -104,20 +104,24 @@ input.judge {
   transition    : .3s;         /* なめらか変化 */
   box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
   border        : 2px solid #000066;    /* 枠の指定 */
+  /* 相対位置の指定(元々の場所からの移動)*/
+  position: relative;
+  left: 17px; /* 左から15px移動させて表示 */
 }
+
 input.judge:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
   color         : #000066;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
 
-p.lastcheck {
+.check {
     display: block;
     font-size: 15px;
     text-align: center;
 }
 
-p.lastcheck:before {
+.check::before {
     content: "※";
 }
 
@@ -179,20 +183,36 @@ span.tb {
     margin: 0 10px 10px;
 }
 
-ul{
+ul li{
     list-style-type: none;
+    border-bottom: 2px solid gray;
+    margin: 0px auto 100px;
+    width: 90%;
+}
+
+.us {
+    font-size: 15px;
 }
 
 ul li .sentence{
     text-align: center;
-    border-bottom: 2px solid gray;
-    margin-bottom: 100px;
 }
 
 label {
     display: block;
     font-size: 25px;
     font-weight: bold;
+    margin-bottom: 7px;
+}
+
+label p {
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+}
+
+label p:hover {
+    background-color: rgb(236, 202, 138);
 }
 
 input:checked + label p {
